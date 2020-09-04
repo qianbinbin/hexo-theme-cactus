@@ -105,3 +105,17 @@
         }());
     </script>
 <% } %>
+<!-- Valine Comments -->
+<% if (theme.valine.enabled && theme.valine.appid && theme.valine.appkey){ %>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script type="text/javascript">
+        new Valine({
+            el: '#vcomment',
+            appId: '<%= theme.valine.appid %>',
+            appKey: '<%= theme.valine.appkey %>',
+            avatar: '<%= theme.valine.avatar %>',
+            placeholder: '<%= theme.valine.placeholder %>'
+        })
+    </script>
+<% } %>

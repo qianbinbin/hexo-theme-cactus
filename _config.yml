@@ -161,3 +161,10 @@ umami_analytics:
 # logo and/or favicons of you website.
 gravatar:
   email: qianbinbin@hotmail.com
+
+valine:
+ enabled: false
+ appid:
+ appkey:
+ avatar:
+ placeholder:
