@@ -163,8 +163,8 @@ gravatar:
   email: qianbinbin@hotmail.com
 
 valine:
- enabled: false
- appid:
- appkey:
- avatar:
- placeholder:
+ enabled: true
+ appid: g7r2JxDlIjYJjDko3s09pPKy-MdYXbMMI
+ appkey: z5zOggClGDG8HuOe9xXVK20M
+ avatar: retro
+ placeholder: 批判一番
