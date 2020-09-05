@@ -61,9 +61,9 @@ post:
   show_updated: false
 
 post_copyright:
-  enabled: false
-  license:
-  license_link:
+  enabled: true
+  license: CC BY-NC-SA 4.0
+  license_link: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
 
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
