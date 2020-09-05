@@ -63,3 +63,9 @@ comments:
 tooltip:
   copy_tip: Copy to clipboard!
   copied: Copied!
+
+post_copyright:
+  author: Post Author
+  link: Permanent Link
+  copyright_title: Copyright Notice
+  copyright_content: All articles in this blog are licensed under %s unless stating additionally.

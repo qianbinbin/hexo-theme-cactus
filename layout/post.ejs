@@ -15,4 +15,7 @@
     <%- page.content %>
   </div>
 </article>
+<% if (theme.post_copyright.enabled) { %>
+  <%- partial('_partial/post_copyright') %>
+<% } %>
 <%- partial('_partial/comments') %>

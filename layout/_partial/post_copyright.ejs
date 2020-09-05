@@ -1,0 +1,19 @@
+<div>
+    <hr/>
+    <ul class="post-copyright">
+        <li class="post-copyright-author">
+            <strong><%- __('post_copyright.author') %></strong>
+            <%- link_to(config.root, config.author) %>
+        </li>
+        <li class="post-copyright-link">
+            <strong><%- __('post_copyright.link') %></strong>
+            <%- link_to(url_for(page.path), page.permalink) %>
+        </li>
+        <li class="post-copyright-license">
+            <strong><%- __('post_copyright.copyright_title') %></strong>
+            <%- __('post_copyright.copyright_content',
+                    link_to(theme.post_copyright.license_link, theme.post_copyright.license)) %>
+        </li>
+    </ul>
+    <hr/>
+</div>
