@@ -216,7 +216,7 @@ Otherwise, you can follow the steps below (E.g., to add a Japanese (ja) translat
 ### RTL support
 This theme support RTL languages for Persian and Arabic language.
 If you would like to use RTL layout, change `direction` attribute in `_config.yml` to `rtl`.
-Note that this also will change the font to [Vazir](https://github.com/rastikerdar/vazir-font), wich is a Persian font.
+Note that this also will change the font to [Vazir](https://github.com/rastikerdar/vazir-font), which is a Persian font.
 
 ```
 direction: rtl
@@ -233,7 +233,7 @@ Set the `rss` field in the `_config.yml` to one of the following values:
 
 ### Analytics
 
-Add you Google Analytics or Baidu Tongji `tracking_id` to the `_config.yml`.
+Add you Google, Baidu, Cloudflare or Umami Analytics `tracking_id` to the `_config.yml`.
 
 ```yml
 google_analytics:
@@ -244,12 +244,39 @@ baidu_analytics:
   enabled: true
   id: 2e6da3c375c8a87f5b664cea6d4cb29c
 
+cloudflare_analytics:
+  enabled: true
+  id: 0dabb6e21848405483a237e6a7b6ed04
+
 umami_analytics:
   enabled: false
   id: e77e68be-f6e4-4br3-9365-2b76b57cd571
   host: https://analytics.domain.com
 ```
 
+### CDN
+
+Load Javascript and CSS resources from a CDN. Enabled by default, loads all resources from [cdnjs](https://cdnjs.com/).
+
+```yml
+cdn:
+  enable: true
+  jquery: 'url'
+  clipboard: 'url'
+  font_awesome: 'url'
+  justified_gallery_css: 'url'
+  justified_gallery_js: 'url'
+```
+
+Set `enable: false` to completely disable CDN and load all resources from your domain. If you want to disable it only for specific resource(s) then just remove the corresponding entry(s).
+
+```yml
+cdn:
+  enable: true
+  jquery: 'url'
+```
+
+Only JQuery will be loaded from the specified CDN.
 
 ### Comments
 
@@ -344,7 +371,6 @@ Finally, edit the `_config.yml` and add a link to the navigation menu.
 nav:
   search: /search/
 ```
-
 
 ## License
 MIT
